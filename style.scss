@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/Background.png);
+  flex-direction: column;
+  gap: 40px;
+
+  h1 {
+    font-size: 60px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    backdrop-filter: blur(50px);
+    border-radius: 24px;
+    padding: 5px 30px 5px 30px;
+    border: solid 2px white;
+  }
+
+  h2 {
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+
+  .container {
+    background: none;
+    backdrop-filter: blur(30px);
+    border: solid 2px rgb(255, 255, 255);
+    width: 70em;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    position: relative;
+  }
+
+  button {
+    padding: 15px;
+    border-radius: 20px;
+    border: solid 2px white;
+    backdrop-filter: blur(50px);
+    cursor: pointer;
+    transition: 0.2s;
+    background: none;
+    color: white;
+    font-size: 17px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
