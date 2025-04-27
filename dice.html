@@ -5,8 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blade of time - dice</title>
     <link rel="stylesheet" href="style.min.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/nca5tog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section id="dice"></section>
+    <section id="dice">
+      <div class="header">
+        <a href="https://seashepherd.fr/">
+          <button class="donation">Donation</button>
+        </a>
+        <h1 class="site-title">Blade of time - Roll the Dice</h1>
+        <a href="/index.html">
+          <button class="dice">Rules</button>
+        </a>
+      </div>
+      <section id="roll">
+        <button id="rollButton">Roll the dice</button>
+        <img
+          id="diceImage"
+          src="/images/de1.png"
+          style="width: 250px; height: 250px"
+        />
+      </section>
+    </section>
+
+    <script>
+      const rollButton = document.getElementById("rollButton");
+      const diceImage = document.getElementById("diceImage");
+
+      rollButton.addEventListener("click", () => {
+        const randomNumber = Math.floor(Math.random() * 6) + 1;
+        diceImage.src = `/images/de${randomNumber}.png`;
+      });
+    </script>
   </body>
 </html>
