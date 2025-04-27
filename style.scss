@@ -248,3 +248,145 @@ li {
     }
   }
 }
+
+// RESPONSIVE DESIGN
+// RESPONSIVE DESIGN
+// RESPONSIVE DESIGN
+
+@media (max-width: 1200px) {
+  .rule-container {
+    width: 95%;
+    height: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+
+    .setup,
+    .turn,
+    .card,
+    .treasure,
+    .navigation,
+    .end {
+      position: static;
+      width: 100%;
+    }
+  }
+
+  .rule-title {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 0 50px;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .site-title {
+    font-size: 40px;
+    padding: 10px 20px;
+  }
+
+  .donation,
+  .dice {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .telecharger {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  #roll {
+    width: 70%;
+    height: auto;
+    padding: 30px 0px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #rules,
+  #dice {
+    padding: 30px 20px;
+  }
+
+  .site-title {
+    font-size: 35px;
+  }
+
+  .rule-title {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  #rollButton {
+    font-size: 14px;
+  }
+
+  #roll img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-title {
+    font-size: 28px;
+  }
+
+  .rule-title {
+    font-size: 28px;
+  }
+
+  .rule-container {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p,
+  li {
+    font-size: 16px;
+  }
+
+  #rollButton {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  #roll img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .donation,
+  .dice,
+  .telecharger {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
