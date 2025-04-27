@@ -20,7 +20,7 @@
           <button class="donation">Donation</button>
         </a>
         <h1 class="site-title">Blade of time - Roll the Dice</h1>
-        <a href="/index.html">
+        <a href="index.html">
           <button class="dice">Rules</button>
         </a>
       </div>
@@ -28,7 +28,7 @@
         <button id="rollButton">Roll the dice</button>
         <img
           id="diceImage"
-          src="/images/de1.png"
+          src="images/de1.png"
           style="width: 250px; height: 250px"
         />
       </section>
@@ -40,7 +40,7 @@
 
       rollButton.addEventListener("click", () => {
         const randomNumber = Math.floor(Math.random() * 6) + 1;
-        diceImage.src = `/images/de${randomNumber}.png`;
+        diceImage.src = `images/de${randomNumber}.png`;
       });
     </script>
   </body>
